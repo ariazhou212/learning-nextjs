@@ -1,22 +1,20 @@
-{
-  "posts": [
-    {
-      "id": "news1",
-      "title": "Breaking News: React 19 Released",
-      "content": "React 19 introduces async rendering by default...",
-      "author": "Aria Zhou"
-    },
-    {
-      "id": "news2",
-      "title": "Tailwind CSS 4.0 Preview",
-      "content": "Tailwind’s new JIT engine is blazing fast...",
-      "author": "Alex Chen"
-    },
-    {
-      "id": "news3",
-      "title": "Understanding Next.js App Router",
-      "content": "App Router is the new default in Next.js 13+...",
-      "author": "Jordan Smith"
-    }
-  ]
-}
+[
+  {
+    "id": "news1",
+    "title": "Breaking News: React 19 Released",
+    "content": "React 19 introduces async rendering by default...",
+    "author": "Aria Zhou"
+  },
+  {
+    "id": "news2",
+    "title": "Tailwind CSS 4.0 Preview",
+    "content": "Tailwind’s new JIT engine is blazing fast...",
+    "author": "Alex Chen"
+  },
+  {
+    "id": "news3",
+    "title": "Understanding Next.js App Router",
+    "content": "App Router is the new default in Next.js 13+...",
+    "author": "Jordan Smith"
+  }
+]

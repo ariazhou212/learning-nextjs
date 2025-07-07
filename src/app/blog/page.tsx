@@ -1,4 +1,4 @@
-import { posts } from "@/app/data/blog-post.json";
+import posts from "@/app/data/blog-post.json";
 import PostCard from "@/app/components/Post";
 
 export default function BlogHome() {
