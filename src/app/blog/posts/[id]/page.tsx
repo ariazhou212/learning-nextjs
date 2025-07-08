@@ -3,7 +3,8 @@
 import posts from "@/app/data/blog-post.json";
 import PostCard from "@/app/components/Post";
 
-export default function Page({ params }: { params: { id: string } }) {
+export default async function Page(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const post = posts.find((p) => p.id === params.id);
 
   return (
