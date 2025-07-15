@@ -4,17 +4,15 @@ import PostCard from "@/app/components/Post";
 import { notFound } from "next/navigation";
 import { Post } from "@/app/lib/definition";
 
-interface Props {
-  params: { id: string };
-}
-
-export default async function PostPage({ params }: Props) {
+export default async function PostPage(props: {
+  params: Promise<{ id: string }>;
+}) {
   const posts: Post[] = (await getPosts()) ?? [];
-  // const params = await props.params;
+  const params = await props.params;
   const post = posts.find((p) => p.id === params.id);
 
   if (!post) {
-    return notFound();
+    notFound();
   }
 
   return (
