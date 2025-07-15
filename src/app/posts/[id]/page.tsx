@@ -2,12 +2,12 @@
 import { getPosts } from "@/app/lib/data";
 import PostCard from "@/app/components/Post";
 import { notFound } from "next/navigation";
+import { Post } from "@/app/lib/definition";
 
 export default async function PostPage({ params }: { params: { id: string } }) {
-  const { id } = params;
-  const posts = await getPosts();
+  const posts: Post[] = (await getPosts()) ?? [];
   if (!posts) return <p>Failed to load posts.</p>;
-  const post = posts.find((p) => p.id === id);
+  const post = posts.find((p) => p.id === params.id);
 
   if (!post) {
     notFound();
