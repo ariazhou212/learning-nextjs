@@ -1,18 +1,18 @@
 [
   {
-    "id": "news1",
+    "id": "x83b2",
     "title": "Breaking News: React 19 Released",
     "content": "React 19 introduces async rendering by default...",
     "author": "Aria Zhou"
   },
   {
-    "id": "news2",
+    "id": "q91lz",
     "title": "Tailwind CSS 4.0 Preview",
     "content": "Tailwind’s new JIT engine is blazing fast...",
     "author": "Alex Chen"
   },
   {
-    "id": "news3",
+    "id": "t7n4k",
     "title": "Understanding Next.js App Router",
     "content": "App Router is the new default in Next.js 13+...",
     "author": "Jordan Smith"

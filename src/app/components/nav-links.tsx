@@ -4,7 +4,7 @@ import Link from "next/link";
 import clsx from "clsx";
 
 const links = [
-  { name: "Blog", href: "/blog" },
+  { name: "Post", href: "/posts" },
   { name: "Contact", href: "/contact" },
 ];
 
