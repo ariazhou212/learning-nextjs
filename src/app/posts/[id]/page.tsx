@@ -4,9 +4,10 @@ import PostCard from "@/app/components/Post";
 import { notFound } from "next/navigation";
 
 export default async function PostPage({ params }: { params: { id: string } }) {
+  const { id } = params;
   const posts = await getPosts();
   if (!posts) return <p>Failed to load posts.</p>;
-  const post = posts.find((p) => p.id === params.id);
+  const post = posts.find((p) => p.id === id);
 
   if (!post) {
     notFound();
