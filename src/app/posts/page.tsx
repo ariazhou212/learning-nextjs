@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import PostCard from "../components/Post";
 import { connectToDB, getPosts } from "../lib/data";
 import Link from "next/link";
