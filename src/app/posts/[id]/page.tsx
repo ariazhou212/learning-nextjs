@@ -3,11 +3,7 @@ import { getPosts } from "@/app/lib/data";
 import PostCard from "@/app/components/Post";
 import { notFound } from "next/navigation";
 
-type PageProps = {
-  params: { id: string };
-};
-
-export default async function PostPage({ params }: PageProps) {
+export default async function PostPage({ params }: { params: { id: string } }) {
   const posts = await getPosts();
   if (!posts) return <p>Failed to load posts.</p>;
   const post = posts.find((p) => p.id === params.id);
